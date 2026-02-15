@@ -95,7 +95,7 @@ ul {
   align-items: center;
   justify-content: center;
   z-index: 99999;
-  transition: opacity 0.6s ease, visibility 0.6s ease;
+  transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1), visibility 1.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #preloader.loaded {
@@ -109,14 +109,15 @@ ul {
 }
 
 .preloader-logo {
-  height: 140px;
+  height: 280px;
   width: auto;
   object-fit: contain;
-  animation: logoFadeIn 1s ease forwards;
+  animation: logoFadeIn 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 }
 
 @keyframes logoFadeIn {
-  0% { opacity: 0; transform: scale(0.85); }
+  0% { opacity: 0; transform: scale(0.8); }
+  50% { opacity: 1; }
   100% { opacity: 1; transform: scale(1); }
 }
 
@@ -492,6 +493,7 @@ ul {
   position: relative;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -548,7 +550,7 @@ ul {
 }
 
 .hero-logo-img {
-  height: 180px;
+  height: 280px;
   width: auto;
   object-fit: contain;
   margin: 0 auto;
@@ -1707,7 +1709,7 @@ body.js-loaded .animate-on-scroll:nth-child(6) { transition-delay: 0.5s; }
   }
 
   .hero-logo-img {
-    height: 200px;
+    height: 160px;
   }
 
   .hero-title {
@@ -1724,21 +1726,7 @@ body.js-loaded .animate-on-scroll:nth-child(6) { transition-delay: 0.5s; }
   }
 
   .hero-float-stats {
-    flex-direction: column;
-  }
-
-  .float-stat {
-    border-right: none;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-    padding: 18px;
-  }
-
-  .float-stat:last-child {
-    border-bottom: none;
-  }
-
-  .float-stat {
-    text-align: center;
+    display: none;
   }
 
   .hero-scroll {

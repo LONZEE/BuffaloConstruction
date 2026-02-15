@@ -13,15 +13,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Hide after short delay once page loads
+  // Hide after delay once page loads
   if (document.readyState === 'complete') {
-    setTimeout(hidePreloader, 400);
+    setTimeout(hidePreloader, 2500);
   } else {
-    window.addEventListener('load', () => setTimeout(hidePreloader, 400));
+    window.addEventListener('load', () => setTimeout(hidePreloader, 2500));
   }
 
-  // Fallback: always hide after 2s no matter what
-  setTimeout(hidePreloader, 2000);
+  // Fallback: always hide after 3.5s no matter what
+  setTimeout(hidePreloader, 3500);
 
 
   // ==================== NAVBAR SCROLL ====================

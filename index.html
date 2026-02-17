@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Buffalo Construction | Industrial, Commercial & Residential</title>
   <meta name="description" content="Buffalo Construction — trusted experts in industrial, commercial, and residential construction. Quality craftsmanship, innovative solutions, and exceptional results." />
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -25,10 +26,7 @@
     <div class="nav-container">
       <a href="#hero" class="logo">
         <img src="assets/images/logo.png" alt="Buffalo Construction Logo" class="logo-img" />
-        <div class="logo-text">
-          <span class="logo-name">BUFFALO</span>
-          <span class="logo-sub">CONSTRUCTION</span>
-        </div>
+        
       </a>
 
       <nav class="nav-links" id="navLinks">
@@ -37,6 +35,7 @@
         <a href="#services" class="nav-link">Services</a>
         <a href="#projects" class="nav-link">Projects</a>
         <a href="#stats" class="nav-link">Why Us</a>
+        <a href="#downloads" class="nav-link">Resources</a>
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
 
@@ -63,6 +62,7 @@
       <a href="#services" class="mobile-link">Services</a>
       <a href="#projects" class="mobile-link">Projects</a>
       <a href="#stats" class="mobile-link">Why Us</a>
+      <a href="#downloads" class="mobile-link">Resources</a>
       <a href="#contact" class="mobile-link">Contact</a>
       <a href="tel:+15551234567" class="mobile-phone">
         <i class="fas fa-phone"></i> (555) 123-4567
@@ -75,29 +75,27 @@
   <section id="hero">
     <div class="hero-bg">
       <div class="hero-overlay"></div>
-      <!-- Video background or image slideshow -->
-      <div class="hero-slides">
-        <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80')"></div>
-        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&q=80')"></div>
-        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1920&q=80')"></div>
-      </div>
+      <!-- Video background -->
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="assets/hero.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
 
     <div class="hero-content">
       <div class="hero-logo animate-on-scroll">
         <img src="assets/images/logo.png" alt="Buffalo Construction Logo" class="hero-logo-img" />
+        <div class="logo-text">
+          <span class="logo-name">BUFFALO</span>
+          <span class="logo-sub">CONSTRUCTION</span>
+        </div>
       </div>
       <!-- <div class="hero-badge animate-on-scroll">
         <span>WELCOME TO BUFFALO CONSTRUCTION</span>
       </div> -->
-      <h1 class="hero-title animate-on-scroll">
-        We Build, Innovate,<br />
-        <span class="highlight">And Design</span> The Future.
-      </h1>
+      
       <!-- <p class="hero-subtitle animate-on-scroll">
-        Delivering excellence in industrial, commercial, and residential construction.
-        Let's turn your vision into reality with quality craftsmanship and innovation.
-      </p> -->
+  -->
       <!-- <div class="hero-buttons animate-on-scroll">
         <a href="#projects" class="btn btn-primary btn-lg">
           <span>View Our Work</span>
@@ -125,7 +123,7 @@
         <span class="float-label">Projects Completed</span>
       </div>
       <div class="float-stat animate-on-scroll">
-        <span class="float-number" data-target="18">0</span><span class="float-plus">+</span>
+        <span class="float-number" data-target="15">0</span><span class="float-plus">+</span>
         <span class="float-label">Years Experience</span>
       </div>
       <div class="float-stat animate-on-scroll">
@@ -143,20 +141,20 @@
           <div class="about-img-main">
             <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80" alt="Construction team at work" loading="lazy" />
           </div>
-          <div class="about-img-secondary">
+          <!-- <div class="about-img-secondary">
             <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&q=80" alt="Building under construction" loading="lazy" />
-          </div>
-          <div class="about-experience-badge">
-            <span class="exp-number">18+</span>
+          </div> -->
+          <!-- <div class="about-experience-badge">
+            <span class="exp-number">15+</span>
             <span class="exp-text">Years of<br />Experience</span>
-          </div>
+          </div> -->
         </div>
 
         <div class="about-content">
           <div class="section-label animate-on-scroll">OUR STORY</div>
           <h2 class="section-title animate-on-scroll">Building Dreams With <span class="highlight">Precision & Passion</span></h2>
           <p class="about-text animate-on-scroll">
-            At Buffalo Construction, we are dedicated to delivering exceptional construction services across industrial, commercial, and residential sectors. With over 18 years of experience, our team brings unmatched expertise, innovative solutions, and unwavering commitment to every project.
+            Buffalo Construction is a diverse provider of professional technical services for a variety of industrial/commercial projects. Our core strategy is building long term client and employee relationships through implementing values such as loyalty, honesty, cost benefit and follow through. This allows us to attract and retain only the most qualified crafts, thus providing superior customer value. This strategy yields cost advantages for our clients by performing project duties correctly the first time and eliminating project rework.
           </p>
           <p class="about-text animate-on-scroll">
             From large-scale industrial facilities to modern commercial spaces and custom dream homes, we blend traditional craftsmanship with cutting-edge construction techniques. Our reputation is built on quality, reliability, and the lasting relationships we form with our clients.
@@ -421,60 +419,44 @@
     </div>
   </section>
 
-  <!-- ==================== TESTIMONIALS SECTION ==================== -->
-  <section id="testimonials" class="section">
+  <!-- ==================== BBB CERTIFICATION SECTION ==================== -->
+  <section id="bbb-certification" class="section">
     <div class="container">
       <div class="section-header text-center">
-        <div class="section-label animate-on-scroll">TESTIMONIALS</div>
-        <h2 class="section-title animate-on-scroll">What Our <span class="highlight">Clients Say</span></h2>
+        <div class="section-label animate-on-scroll">Trusted Business Authority</div>
+        <h2 class="section-title animate-on-scroll">Accredited by the <span class="highlight">Better Business Bureau</span></h2>
       </div>
 
-      <div class="testimonials-slider">
-        <div class="testimonial-track" id="testimonialTrack">
-          <div class="testimonial-card">
-            <div class="testimonial-stars">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            </div>
-            <p class="testimonial-text">"Buffalo Construction transformed our outdated warehouse into a modern distribution center. Their attention to detail and project management was outstanding. Completed on time and under budget!"</p>
-            <div class="testimonial-author">
-              <div class="author-avatar"><i class="fas fa-user"></i></div>
-              <div>
-                <h4>James Rodriguez</h4>
-                <span>CEO, LogiTech Solutions</span>
+      <div class="bbb-content">
+        <div class="bbb-card animate-on-scroll">
+          <div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 40px; align-items: center; margin-bottom: 40px;">
+            <div class="bbb-rating-box" style="text-align: center; display: flex; align-items: center; justify-content: center; gap: 30px;">
+              <div class="bbb-logo" style="margin-bottom: 0;">
+                <img src="assets/images/BBB.png" alt="BBB Logo - A+ Accredited Business" style="width: 140px; height: 140px; object-fit: contain;">
+              </div>
+              <div class="bbb-rating">
+                <h3 class="bbb-grade" style="font-size: 56px; margin: 0; color: #003DA5;">A+</h3>
+                
               </div>
             </div>
-          </div>
-          <div class="testimonial-card">
-            <div class="testimonial-stars">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            </div>
-            <p class="testimonial-text">"We hired Buffalo Construction for our new office space, and the results exceeded all expectations. The team was professional, communicative, and delivered a space that our employees love."</p>
-            <div class="testimonial-author">
-              <div class="author-avatar"><i class="fas fa-user"></i></div>
-              <div>
-                <h4>Sarah Mitchell</h4>
-                <span>Operations Director, Apex Group</span>
-              </div>
+            <div class="bbb-details">
+              <h3 style="font-size: 24px; margin-bottom: 15px;">Why Our A+ Rating Matters</h3>
+              <p style="margin-bottom: 20px; line-height: 1.6;">The Better Business Bureau has accredited Buffalo Construction with an A+ rating, our highest achievement. This rating reflects our unwavering commitment to:</p>
+              <ul class="bbb-features" style="list-style: none; padding: 0; margin: 0;">
+                <li style="margin-bottom: 12px; display: flex; align-items: center;"><i class="fas fa-check-circle" style="color: #003DA5; margin-right: 12px; flex-shrink: 0;"></i> <span>Ethical business practices and transparency</span></li>
+                <li style="margin-bottom: 12px; display: flex; align-items: center;"><i class="fas fa-check-circle" style="color: #003DA5; margin-right: 12px; flex-shrink: 0;"></i> <span>Prompt and fair resolution of customer concerns</span></li>
+                <li style="margin-bottom: 12px; display: flex; align-items: center;"><i class="fas fa-check-circle" style="color: #003DA5; margin-right: 12px; flex-shrink: 0;"></i> <span>Compliance with BBB Code of Business Practices</span></li>
+                <li style="margin-bottom: 12px; display: flex; align-items: center;"><i class="fas fa-check-circle" style="color: #003DA5; margin-right: 12px; flex-shrink: 0;"></i> <span>Reliable licensing, insurance, and proper credentials</span></li>
+                <li style="margin-bottom: 12px; display: flex; align-items: center;"><i class="fas fa-check-circle" style="color: #003DA5; margin-right: 12px; flex-shrink: 0;"></i> <span>Consistent quality workmanship and customer satisfaction</span></li>
+              </ul>
             </div>
           </div>
-          <div class="testimonial-card">
-            <div class="testimonial-stars">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            </div>
-            <p class="testimonial-text">"Our dream home became a reality thanks to Buffalo Construction. From the initial design consultation to the final walkthrough, every step was handled with care and expertise."</p>
-            <div class="testimonial-author">
-              <div class="author-avatar"><i class="fas fa-user"></i></div>
-              <div>
-                <h4>Mark & Diana Chen</h4>
-                <span>Homeowners</span>
-              </div>
-            </div>
+          <div style="text-align: center;">
+            <a href="https://www.bbb.org/us/tx/weslaco/profile/general-contractor/buffalo-construction-llc-0915-90046079" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+              <span>Verify on BBB.org</span>
+              <i class="fas fa-external-link-alt"></i>
+            </a>
           </div>
-        </div>
-        <div class="testimonial-nav">
-          <button class="test-nav-btn" id="testPrev"><i class="fas fa-chevron-left"></i></button>
-          <div class="test-dots" id="testDots"></div>
-          <button class="test-nav-btn" id="testNext"><i class="fas fa-chevron-right"></i></button>
         </div>
       </div>
     </div>
@@ -494,6 +476,45 @@
           <a href="tel:+15551234567" class="btn btn-outline btn-lg btn-white">
             <i class="fas fa-phone"></i>
             <span>Call Us Now</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== DOWNLOADS SECTION ==================== -->
+  <section id="downloads" class="section section-dark">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-label animate-on-scroll">RESOURCES</div>
+        <h2 class="section-title animate-on-scroll">Download Our <span class="highlight">Handbooks</span></h2>
+        <p class="section-subtitle animate-on-scroll">Access our comprehensive guides to understand our standards and safety protocols.</p>
+      </div>
+
+      <div class="downloads-grid">
+        <!-- Subcontractor Handbook -->
+        <div class="download-card animate-on-scroll">
+          <div class="download-icon">
+            <i class="fas fa-file-pdf"></i>
+          </div>
+          <h3>Subcontractor Handbook</h3>
+          <p>Essential guidelines and requirements for all subcontractors working with Buffalo Construction. Learn about our expectations, standards, and procedures.</p>
+          <a href="https://drive.google.com/uc?export=download&id=1zF21qQiJ3rVnQVhgVB10Ue1t23hZc42L" class="btn btn-primary" download>
+            <i class="fas fa-download"></i>
+            <span>Download PDF</span>
+          </a>
+        </div>
+
+        <!-- Safety Handbook -->
+        <div class="download-card animate-on-scroll">
+          <div class="download-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Safety Handbook</h3>
+          <p>Critical safety protocols and procedures to ensure a secure work environment. Our commitment to safety excellence on every project.</p>
+          <a href="https://drive.google.com/uc?export=download&id=1WsQvHv0yB1i0A9-p83QI1x0YmjAwyQb0" class="btn btn-primary" download>
+            <i class="fas fa-download"></i>
+            <span>Download PDF</span>
           </a>
         </div>
       </div>
@@ -540,12 +561,12 @@
             </div>
           </div>
 
-          <div class="contact-socials animate-on-scroll">
+          <!-- <div class="contact-socials animate-on-scroll">
             <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
             <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
             <a href="#" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
-          </div>
+          </div> -->
         </div>
 
         <div class="contact-form-wrapper animate-on-scroll">
@@ -641,6 +662,7 @@
             <li><a href="#about">About Us</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#downloads">Resources</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
         </div>

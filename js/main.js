@@ -129,18 +129,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // ==================== HERO SLIDESHOW ====================
-  const slides = document.querySelectorAll('.hero-slide');
-  let currentSlide = 0;
+  // Commented out - using video instead
+  // const slides = document.querySelectorAll('.hero-slide');
+  // let currentSlide = 0;
 
-  function nextSlide() {
-    slides[currentSlide].classList.remove('active');
-    currentSlide = (currentSlide + 1) % slides.length;
-    slides[currentSlide].classList.add('active');
-  }
+  // function nextSlide() {
+  //   slides[currentSlide].classList.remove('active');
+  //   currentSlide = (currentSlide + 1) % slides.length;
+  //   slides[currentSlide].classList.add('active');
+  // }
 
-  if (slides.length > 1) {
-    setInterval(nextSlide, 5000);
-  }
+  // if (slides.length > 1) {
+  //   setInterval(nextSlide, 5000);
+  // }
 
 
   // ==================== SCROLL ANIMATIONS ====================

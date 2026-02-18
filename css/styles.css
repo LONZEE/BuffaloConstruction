@@ -1356,11 +1356,23 @@ ul {
   margin-bottom: 4px;
 }
 
+.contact-name {
+  font-weight: 700;
+  color: var(--text);
+  display: inline-block;
+  min-width: 110px;
+}
+
 .contact-item p,
 .contact-item a {
   font-size: 0.9rem;
   color: var(--text-light);
   line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.contact-item p:last-child {
+  margin-bottom: 0;
 }
 
 .contact-item a:hover {
@@ -1501,11 +1513,23 @@ select {
   color: var(--white);
 }
 
+.footer-brand {
+  max-width: 400px;
+}
+
+.footer-text .logo-name {
+  font-size: 1.5rem;
+}
+
+.footer-text .logo-sub {
+  font-size: 0.85rem;
+}
+
 .footer-brand p {
   font-size: 0.9rem;
   line-height: 1.7;
   color: rgba(255,255,255,0.5);
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .footer-socials {
@@ -1583,13 +1607,30 @@ select {
 }
 
 .footer-bottom {
-  text-align: center;
+  text-align: right;
   padding: 24px 0;
 }
 
 .footer-bottom p {
   font-size: 0.85rem;
   color: rgba(255,255,255,0.35);
+}
+
+@media (max-width: 768px) {
+  .footer-bottom {
+    text-align: center;
+  }
+}
+
+/* ================================================
+   RESPONSIVE — MOBILE/TABLET
+   ================================================ */
+
+/* Hide project filters on mobile */
+@media (max-width: 768px) {
+  .project-filters {
+    display: none;
+  }
 }
 
 /* ================================================

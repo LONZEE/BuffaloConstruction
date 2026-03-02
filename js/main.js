@@ -347,6 +347,26 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
+  // ==================== DOWNLOAD CARD FEEDBACK ====================
+  const downloadCards = document.querySelectorAll('a.download-card');
+  downloadCards.forEach(card => {
+    card.addEventListener('click', () => {
+      const btnSpan = card.querySelector('.btn span');
+      const btnIcon = card.querySelector('.btn i');
+      if (btnSpan && btnIcon) {
+        const originalText = btnSpan.textContent;
+        const originalIcon = btnIcon.className;
+        btnSpan.textContent = 'Downloading...';
+        btnIcon.className = 'fas fa-spinner fa-spin';
+        setTimeout(() => {
+          btnSpan.textContent = originalText;
+          btnIcon.className = originalIcon;
+        }, 2000);
+      }
+    });
+  });
+
+
   // ==================== FADE-IN-UP ANIMATION KEYFRAMES ====================
   const style = document.createElement('style');
   style.textContent = `
